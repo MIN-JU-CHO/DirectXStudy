@@ -39,82 +39,85 @@
     <ClCompile Include="BoxApp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Camera.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dUtil.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dApp.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\TextureMgr.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dUtil.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\MathHelper.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GameTimer.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\xnacollision.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GeometryGenerator.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Camera.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\LightHelper.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GeometryGenerator.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\MathHelper.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Waves.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\TextureMgr.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GameTimer.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Waves.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dApp.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\xnacollision.cpp">
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\LightHelper.cpp">
       <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="HillsDemo.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Camera.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dUtil.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dApp.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GeometryGenerator.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dUtil.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\TextureMgr.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dx11effect.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\MathHelper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GameTimer.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Camera.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GeometryGenerator.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Waves.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\LightHelper.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\LightHelper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\MathHelper.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dApp.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\TextureMgr.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GameTimer.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Waves.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\xnacollision.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\xnacollision.h">
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dx11effect.h">
       <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Effects11.lib">
+    <Library Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Effects11.lib">
       <Filter>Common</Filter>
     </Library>
-    <Library Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Effects11d.lib">
+    <Library Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Effects11d.lib">
       <Filter>Common</Filter>
     </Library>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\FX\color.fx">
+    <FxCompile Include="FX\color.fx">
       <Filter>FX</Filter>
     </FxCompile>
   </ItemGroup>

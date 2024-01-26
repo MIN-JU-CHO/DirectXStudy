@@ -5,7 +5,11 @@
       <FullPath>C:\Users\ehdnf\Documents\GitHub\DirectXStudy\DirectXStudy\x64\Debug\DirectXStudy.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\ehdnf\Documents\GitHub\DirectXStudy\DirectXStudy\x64\Debug\color.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

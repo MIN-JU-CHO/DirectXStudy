@@ -71,9 +71,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExecutablePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Users\user\Downloads\d3d11CodeSet1\Common;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;C:\Users\user\Downloads\d3d11CodeSet1\Common;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Utilities\bin\x64;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Users\ehdnf\Downloads\d3d11CodeSet1\Common;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;C:\Users\ehdnf\Downloads\d3d11CodeSet1\Common;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -111,9 +111,9 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d11.lib;d3dx11d.lib;D3DCompiler.lib;Effects11d.lib;dxerr.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dx11d.lib;D3DCompiler.lib;Effects11d.lib;dxerr.lib;dxgi.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -133,24 +133,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GameTimer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GeometryGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\LightHelper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\MathHelper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\TextureMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Waves.cpp" />
+    <ClCompile Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\xnacollision.cpp" />
     <ClCompile Include="4_7_1_InitDirect3DApp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="BoxApp.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Camera.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dApp.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dUtil.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GameTimer.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GeometryGenerator.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\LightHelper.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\MathHelper.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\TextureMgr.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Waves.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\xnacollision.cpp" />
+    <ClCompile Include="BoxApp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="GetPerspectiveMatrix.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="GetViewMatrix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="HillsDemo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MatrixOperation.cpp">
@@ -161,25 +166,24 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Camera.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dApp.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dUtil.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\d3dx11effect.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GameTimer.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\GeometryGenerator.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\LightHelper.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\MathHelper.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\TextureMgr.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Waves.h" />
-    <ClInclude Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\xnacollision.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Camera.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dApp.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dUtil.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\d3dx11effect.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GameTimer.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\GeometryGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\LightHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\MathHelper.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\TextureMgr.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Waves.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\xnacollision.h" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Effects11.lib" />
-    <Library Include="C:\Users\user\Downloads\d3d11CodeSet1\Common\Effects11d.lib" />
+    <Library Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Effects11.lib" />
+    <Library Include="..\..\..\..\..\Downloads\d3d11CodeSet1\Common\Effects11d.lib" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\FX\color.fx">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    <FxCompile Include="FX\color.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
     </FxCompile>
   </ItemGroup>
